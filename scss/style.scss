@@ -204,21 +204,30 @@ nav {
 
 /*======APPIONTMENT=========*/
 .appointment-section{
-    overflow: hidden;
+      background:linear-gradient(rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.2));
+    position: relative;
+    .lg-bg-img{
+        background: url(../img/appointment-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 100%;
+        width: 40%;
+        position: absolute;
+    }
     .col-md-5{
         background: url(../img/appointment-bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        min-height: 250px;
+        min-height: 300px;
+        
     }
-    .col-md-5,.col-md-7{
-        padding: 0;
-    }
+
     .appointment{
         padding-top: 5rem;
         padding-bottom: 5rem;
-        background:linear-gradient(rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.2));
+//        background:linear-gradient(rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.2));
         .form-control:focus{
             box-shadow: 0 0 0 0;
         }
