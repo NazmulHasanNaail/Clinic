@@ -20,6 +20,7 @@ nav .search {
 
 nav .flaticon-search {
   cursor: pointer;
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 nav .flaticon-search:hover {
@@ -52,6 +53,7 @@ nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="
     background: #fff; }
   .services-section .all-items {
     background: #fff;
+    -webkit-box-shadow: 0 0 35px 5px #dceff8;
     box-shadow: 0 0 35px 5px #dceff8; }
   .services-section .item:not(:nth-child(3)) {
     border-right: 1px dashed #007bff; }
@@ -98,6 +100,7 @@ nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="
   background: #fafafa; }
   .our-team .tem-member {
     background: #fff;
+    -webkit-transition: .5s;
     transition: .5s; }
     .our-team .tem-member .tem-member-img {
       position: relative; }
@@ -110,6 +113,7 @@ nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="
         height: 100%;
         width: 100%;
         opacity: 0;
+        -webkit-transition: .5s ease;
         transition: .5s ease;
         background: rgba(0, 0, 0, 0.2); }
         .our-team .tem-member .tem-member-img .overlay ul {
@@ -117,7 +121,6 @@ nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="
           top: 90%;
           left: 50%;
           -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-10%, -50%);
           transform: translate(-50%, -50%); }
     .our-team .tem-member span {
       color: #007bff; }
@@ -127,17 +130,21 @@ nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="
       .our-team .tem-member ul li a {
         font-size: 1.2rem;
         color: #fff;
+        -webkit-transition: .5s;
         transition: .5s; }
       .our-team .tem-member ul li a:hover {
         color: #007bff; }
   .our-team .tem-member:hover .overlay {
     opacity: 1; }
   .our-team .tem-member:hover {
+    -webkit-box-shadow: 0 8px 29px 2px #93bfe866;
     box-shadow: 0 8px 29px 2px #93bfe866;
+    -webkit-transform: translateY(-5px);
     transform: translateY(-5px); }
 
 /*======APPIONTMENT=========*/
 .appointment-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 123, 255, 0.2)), to(rgba(0, 123, 255, 0.2)));
   background: linear-gradient(rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.2));
   position: relative; }
   .appointment-section .lg-bg-img {
@@ -158,6 +165,7 @@ nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="
     padding-top: 5rem;
     padding-bottom: 5rem; }
     .appointment-section .appointment .form-control:focus {
+      -webkit-box-shadow: 0 0 0 0;
       box-shadow: 0 0 0 0; }
   .appointment-section .li-des {
     font-size: 1.2rem;
@@ -190,6 +198,7 @@ nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="
 /*======FOOTER=========*/
 .footer-section {
   padding-top: 5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 123, 255, 0.8)), to(rgba(0, 123, 255, 0.8)));
   background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.8)); }
   .footer-section ul li {
     list-style: none;
@@ -197,6 +206,7 @@ nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="
     .footer-section ul li a {
       font-size: 1.2rem;
       color: #fff;
+      -webkit-transition: .5s;
       transition: .5s;
       text-decoration: none; }
     .footer-section ul li a:hover {
@@ -206,6 +216,7 @@ nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="
     .footer-section .social-link li a {
       font-size: 1.2rem;
       color: #fff;
+      -webkit-transition: .5s;
       transition: .5s; }
   .footer-section .social-link li:first-child {
     margin-left: 0; }

@@ -36,6 +36,7 @@ nav {
     }
     .flaticon-search{
         cursor: pointer;
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
     }
     .flaticon-search:hover{
@@ -79,6 +80,7 @@ nav {
     }
     .all-items {
         background: $bg-primary-color;
+        -webkit-box-shadow: 0 0 35px 5px #dceff8;
         box-shadow: 0 0 35px 5px #dceff8;
     }
 
@@ -144,6 +146,7 @@ nav {
 
     .tem-member {
         background: $bg-primary-color;
+        -webkit-transition: .5s;
         transition: .5s;
         .tem-member-img {
             position: relative;
@@ -157,6 +160,7 @@ nav {
                 height: 100%;
                 width: 100%;
                 opacity: 0;
+                -webkit-transition: .5s ease;
                 transition: .5s ease;
                  background: rgba(0, 0, 0, .2);
                 ul {
@@ -164,7 +168,6 @@ nav {
                     top: 90%;
                     left: 50%;
                     -webkit-transform: translate(-50%, -50%);
-                    -ms-transform: translate(-10%, -50%);
                     transform: translate(-50%, -50%);
                 }
             }
@@ -183,6 +186,7 @@ nav {
             a {
                 font-size: 1.2rem;
                 color: #fff;
+                -webkit-transition: .5s;
                 transition: .5s;
             }
 
@@ -196,7 +200,9 @@ nav {
         opacity: 1;
     }
     .tem-member:hover{
+            -webkit-box-shadow: 0 8px 29px 2px #93bfe866;
             box-shadow: 0 8px 29px 2px #93bfe866;
+            -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
     }
 }
@@ -204,6 +210,7 @@ nav {
 
 /*======APPIONTMENT=========*/
 .appointment-section{
+      background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 123, 255, 0.2)), to(rgba(0, 123, 255, 0.2)));
       background:linear-gradient(rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.2));
     position: relative;
     .lg-bg-img{
@@ -229,6 +236,7 @@ nav {
         padding-bottom: 5rem;
 //        background:linear-gradient(rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.2));
         .form-control:focus{
+            -webkit-box-shadow: 0 0 0 0;
             box-shadow: 0 0 0 0;
         }
     }
@@ -282,6 +290,7 @@ nav {
 /*======FOOTER=========*/
 .footer-section {
     padding-top: 5rem ;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 123, 255, 0.8)), to(rgba(0, 123, 255, 0.8)));
     background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.8));
 
     ul li {
@@ -291,6 +300,7 @@ nav {
         a {
             font-size: 1.2rem;
             color: #fff;
+            -webkit-transition: .5s;
             transition: .5s;
             text-decoration: none;
         }
@@ -307,6 +317,7 @@ nav {
         a {
             font-size: 1.2rem;
             color: #fff;
+            -webkit-transition: .5s;
             transition: .5s;
         }
 
