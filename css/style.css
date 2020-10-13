@@ -170,10 +170,22 @@ nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="
   padding: 5rem 0; }
   .reviews-section .single-review .customer-overview img {
     height: 100px;
-    width: 100px;
-    border-radius: 50%; }
+    width: 100px; }
   .reviews-section .single-review .checked {
     color: orange; }
+  .reviews-section .single-review .customer-review h4 {
+    position: relative;
+    display: inline-block; }
+  .reviews-section .single-review .customer-review h4::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 30px;
+    left: -35px;
+    top: 0;
+    background: url(../img/quotes.png);
+    background-repeat: no-repeat;
+    background-size: 28px; }
 
 /*======FOOTER=========*/
 .footer-section {
