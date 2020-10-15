@@ -1,3 +1,17 @@
+///search-box//
+function openSearch() {
+    var obj = document.getElementById("myOverlay");
+    obj.setAttribute("style", "visibility: visible; opacity: 1;");
+
+}
+
+function closeSearch() {
+   var obj = document.getElementById("myOverlay");
+    obj.setAttribute("style", "visibility: hiden; opacity: 0;");
+}
+
+
+//=====counter-up=====//
 const counters = document.querySelectorAll('.counter');
 const speed = 300; // The lower the slower
 
@@ -25,3 +39,10 @@ counters.forEach(counter => {
 
 	updateCount();
 });
+
+//=======Sticky-Navbar======//
+window.addEventListener("scroll",function(){
+    var navbar = document.querySelector("nav");
+     navbar.classList.toggle("sticky", window.scrollY > 0);
+    
+})

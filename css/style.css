@@ -1,40 +1,168 @@
 /*=======NAVBAR==========*/
-nav .navbar-nav .nav-item {
-  font-weight: 500;
-  padding: 0 1rem; }
-  nav .navbar-nav .nav-item .nav-link {
+nav {
+  transition: .5s;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #fff;
+  /*--For-mobile--*/ }
+  @media (min-width: 992px) {
+    nav {
+      background: transparent; } }
+  nav .navbar-nav .nav-item {
+    font-weight: 500;
+    padding: 0 1rem; }
+    nav .navbar-nav .nav-item .nav-link {
+      color: #fff; }
+    nav .navbar-nav .nav-item .nav-link:hover,
+    nav .navbar-nav .nav-item .nav-link:focus {
+      color: #007bff; }
+  nav .navbar-nav .nav-item.active > .nav-link {
+    color: #007bff; }
+  nav .phone {
+    font-weight: 500;
+    margin-right: 20px; }
+    nav .phone span {
+      color: #fff; }
+  nav .search {
+    border-left: 1px dotted #212529; }
+  nav .flaticon-search {
+    cursor: pointer;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  nav .flaticon-search:hover {
+    color: #007bff; }
+  nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="flaticon-"]:after, nav [class*=" flaticon-"]:after {
+    font-size: 1.6rem; }
+  nav .show .navbar-nav .nav-link {
     color: #000; }
-  nav .navbar-nav .nav-item .nav-link:hover,
-  nav .navbar-nav .nav-item .nav-link:focus {
+
+/*-search*/
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto; }
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 50px;
+  cursor: pointer;
+  color: white;
+  transition: .5s; }
+
+.overlay .closebtn:hover {
+  color: #ccc; }
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  outline: none; }
+
+.overlay input[type=text]:hover {
+  background: #fff;
+  transition: .5s; }
+
+.overlay button {
+  transition: .5s;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #bbb;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  outline: none; }
+  .overlay button .fa-search {
     color: #007bff; }
 
-nav .navbar-nav .nav-item.active > .nav-link {
-  color: #007bff; }
+.overlay button:hover {
+  background: #ddd; }
 
-nav .phone {
-  font-weight: 500;
-  margin-right: 20px; }
-
-nav .search {
-  border-left: 1px dotted #212529; }
-
-nav .flaticon-search {
-  cursor: pointer;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
-
-nav .flaticon-search:hover {
-  color: #007bff; }
-
-nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="flaticon-"]:after, nav [class*=" flaticon-"]:after {
-  font-size: 1.6rem; }
+/*---sticky-navbar--*/
+nav.sticky {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+  padding-top: 0;
+  padding-bottom: 0; }
+  nav.sticky .navbar-nav .nav-link {
+    color: #000; }
+  nav.sticky .phone span {
+    color: #000; }
 
 /*=======HERO==========*/
 .hero .carousel-item {
   max-width: 100%;
-  max-height: 90vh; }
+  min-height: 115vh; }
+  @media (min-width: 992px) {
+    .hero .carousel-item {
+      max-height: 100vh; } }
+  .hero .carousel-item .carousel-img {
+    min-height: 115vh;
+    object-fit: cover; }
   .hero .carousel-item .carousel-caption {
-    bottom: 6rem; }
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 10rem; }
+    .hero .carousel-item .carousel-caption h1 {
+      font-size: 3rem; }
+    .hero .carousel-item .carousel-caption p {
+      font-size: 1rem; }
+    .hero .carousel-item .carousel-caption img {
+      height: 3rem; }
+    @media (min-width: 576px) {
+      .hero .carousel-item .carousel-caption {
+        width: 540px; }
+        .hero .carousel-item .carousel-caption h1 {
+          font-size: 4rem; }
+        .hero .carousel-item .carousel-caption p {
+          font-size: 1.1rem; }
+        .hero .carousel-item .carousel-caption img {
+          height: 3.5rem; } }
+    @media (min-width: 768px) {
+      .hero .carousel-item .carousel-caption {
+        width: 720px; }
+        .hero .carousel-item .carousel-caption h1 {
+          font-size: 4.5rem; }
+        .hero .carousel-item .carousel-caption p {
+          font-size: 1.2rem; }
+        .hero .carousel-item .carousel-caption img {
+          height: 4rem; } }
+    @media (min-width: 992px) {
+      .hero .carousel-item .carousel-caption {
+        width: 960px; }
+        .hero .carousel-item .carousel-caption h1 {
+          font-size: 6rem; }
+        .hero .carousel-item .carousel-caption p {
+          font-size: 1.25rem; }
+        .hero .carousel-item .carousel-caption img {
+          height: 5rem; } }
+    @media (min-width: 1200px) {
+      .hero .carousel-item .carousel-caption {
+        width: 1140px; } }
 
 .hero .carousel-item::before {
   content: '';
@@ -48,19 +176,24 @@ nav [class^="flaticon-"]:before, nav [class*=" flaticon-"]:before, nav [class^="
 /*======SERVICES=========*/
 .services-section {
   background: #fafafa;
-  margin-top: -6rem; }
+  margin-top: -6rem;
+  padding-bottom: 2rem; }
   .services-section .item {
     background: #fff; }
   .services-section .all-items {
     background: #fff;
-    -webkit-box-shadow: 0 0 35px 5px #dceff8;
-    box-shadow: 0 0 35px 5px #dceff8; }
+    -webkit-box-shadow: 0 10px 35px 5px #dceff8;
+    box-shadow: 0 0 30px 3px #dceff8; }
   .services-section .item:not(:nth-child(3)) {
-    border-right: 1px dashed #007bff; }
+    border-bottom: 0.1px dashed #007bff; }
+    @media (min-width: 768px) {
+      .services-section .item:not(:nth-child(3)) {
+        border: none;
+        border-right: 0.5px dashed #007bff; } }
 
 /*======WORKING-HOURS=========*/
 .working-hours-section {
-  padding: 5rem 0;
+  padding-bottom: 5rem;
   background: #fafafa; }
   .working-hours-section .li-des {
     font-size: 1.2rem;
