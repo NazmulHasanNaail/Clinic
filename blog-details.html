@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medical clinic</title>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!================NAVBAR-START==================>
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+       <div class="container">
+              
+            <!---hambergur-menu--->
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>  
+              
+          
+          <!-------logo------->
+           <a class="navbar-brand py-0" href="index.html">
+               <img src="img/logo.jpg" alt="" height="70" width="130" class="img-fluid">
+           </a>
+
+
+
+           <!-- Search-trigger-modal-for-mobile-view -->
+           <div class="search d-block d-lg-none">
+               <i class="flaticon-search-interface-symbol" onclick="openSearch()"></i>
+           </div>
+           
+
+           <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                   <li class="nav-item">
+                       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="treatment.html">Treatments</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="about.html">about us</a>
+                   </li>
+                    <li class="nav-item active">
+                       <a class="nav-link" href="blog.html">Blog</a>
+                   </li>
+                   <li class="nav-item ">
+                       <a class="nav-link" href="contact.html">contact</a>
+                   </li>
+               </ul>
+
+               <div class="phone d-none d-lg-block">
+                   <i class="flaticon-phone-call mr-1"></i>
+                   <span>Call us <a href="#"> 000 888 777</a></span>
+               </div>
+
+
+               <!-- Search trigger modal -->
+               <div class="search d-none d-lg-block">
+                   <i class="flaticon-search-interface-symbol" onclick="openSearch()"></i>
+               </div>
+           </div>
+       </div>
+
+   </nav>
+       <!----search-box---->
+        <div id="myOverlay" class="overlay-search">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+          <div class="overlay-content">
+            <form >
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+    <!==================NAVBAR-END===================>
+    
+    <!==================PAGE-TITLE-START==================>
+    <section class="page-title">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h1 class="display-3 text-capitalize">Blog</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tempore consequuntur accusantium quaerat id nulla sapiente ullam quod commodi ex ut,</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!====================PAGE-TITLE-END====================>
+    
+    <!====================PAGE-BREADCRUMB-START====================>
+    <section class="page-breadcrumb">
+        <!--breadcrumb--->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                <li class="breadcrumb-item active" aria-current="page">Different types of stroke</li>
+            </ol>
+        </nav>
+    </section>
+    <!====================PAGE-BREADCRUMB-END====================>
+        
+    <!================BLOG-DETAILS-START=======================>
+    <section class="bog-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="blog-details-content">
+                        <!---Blog-post----->
+                        <div class="blog-post pt-5">
+                            <img src="img/doctor2.jpg" alt="doctor2" class="img-fluid">
+                            <div class="blog-item-text p-3">
+                                <h5><a href="blog-details.html" class="text-dark">Different types of stroke</a></h5>
+                                <ul class="author list-unstyled d-flex mb-0 mt-3">
+                                    <li><a href="#"><img src="img/team-1.jpg" alt="" class="rounded-circle mr-2" height="25px" width="25px">Jhone</a></li>
+                                    <li><span>Nov 13, 2020</span></li>
+                                </ul>
+                                <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa tempore ea amet a at ipsa qui illo in facilis facere nihil veniam maiores quas corporis!lorem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa tempore ea amet a at ipsa qui illo in facilis facere nihil veniam maiores quas corporis!loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa tempore ea amet a at ipsa qui illo in facilis facere nihil veniam maiores quas corporis!lorem</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta maxime fugiat eligendi, incidunt accusamus et. Deserunt numquam illo, impedit fugit, necessitatibus, obcaecati pariatur repellendus facere aperiam eaque quisquam deleniti ipsa.</p>
+
+                                <blockquote class="px-3 py-5 my-4">
+                                    <div class="blockquote-quote"><i class="fas fa-quote-left"></i></div>
+                                    <p>dolor sit amet, consectetur adipisicing elit. Odit hic odio nemo earum, voluptatum velit consequuntur assumenda iusto autem nulla fugit, inventore iste officiis numquam atque error, libero accusantium id.</p>
+                                    <div class="bockquote-author d-flex mt-5">
+                                        <h6 class="pr-1 mb-0">Harry Russell</h6>
+                                        <span class="text-muted"> - Vice President</span>
+                                    </div>
+
+                                </blockquote>
+                                <div class="blog-post-list">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2 d-flex"><i class="fas fa-plus-circle mt-1 mr-2"></i>For those of you who are serious about having more.</li>
+                                        <li class="mb-2 d-flex"><i class="fas fa-plus-circle mt-1 mr-2"></i>There are a million distractions in every facet of our lives.</li>
+                                        <li class="mb-2 d-flex"><i class="fas fa-plus-circle mt-1 mr-2"></i>nce you have a clear understanding of what you want</li>
+                                        <li class="mb-2 d-flex"><i class="fas fa-plus-circle mt-1 mr-2"></i>There are a million distractions in every facet of our lives.</li>
+                                        <li class="mb-2 d-flex"><i class="fas fa-plus-circle mt-1 mr-2"></i>For those of you who are serious about having more.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mt-4">
+                                    <div class="blog-post-info d-flex justify-content-center justify-content-md-start pl-3">
+                                        <div class="blog-like pr-4">
+                                            <a href="#">
+                                                <i class="far fa-thumbs-up mr-2"></i>
+                                                35
+                                            </a>
+                                        </div>
+                                        <div class="blog-view pr-4">
+                                            <a href="#">
+                                                <i class="far fa-eye mr-2"></i>
+                                                225
+                                            </a>
+                                        </div>
+                                        <div class="blog-comment pr-4">
+                                            <a href="#">
+                                                <i class="far fa-comments mr-2"></i>
+                                                45
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-4">
+                                    <div class="blog-post-social d-flex justify-content-center justify-content-md-end pr-3">
+                                        <span class="text-dark">Share this post :</span>
+                                        <ul class="list-unstyled social-link d-flex">
+                                            <li class="pl-3"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="pl-3"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li class="pl-3"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="pl-3"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                            <li class="pl-3"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!---Related-post----->
+                        <div class="related-post pt-5">
+                            <h2 class="display-5 mb-0">Related Post</h2>
+                            <div class="row">
+                                <div class="col-md-6 mt-5">
+                                    <div class="blog-single-item border">
+                                        <div class="blog-item-header">
+                                            <img src="img/doctor1.jpg" alt="doctor1" class="img-fluid">
+                                            <div class="like-comment py-3">
+                                                <ul class="list-unstyled d-flex justify-content-between px-3 mb-0">
+                                                    <li><a href="#"><i class="far fa-thumbs-up"></i>225&nbsp; Likes</a></li>
+                                                    <li><a href="#"><i class="far fa-comments"></i>30 &nbsp; comments</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="blog-item-text p-3">
+                                            <h5><a href="blog-details.html" class="text-dark">Different types of stroke</a></h5>
+                                            <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa tempore ea amet a at ipsa qui illo in facilis facere nihil veniam maiores quas corporis!</p>
+                                            <ul class="list-unstyled d-flex justify-content-end mb-0">
+                                                <li><a href="#"><img src="img/team-1.jpg" alt="" class="rounded-circle mr-2" height="25px" width="25px">Jhone</a></li>
+                                                <li><span>Nov 13, 2020</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-5">
+                                    <div class="blog-single-item border">
+                                        <div class="blog-item-header">
+                                            <img src="img/doctor2.jpg" alt="doctor1" class="img-fluid">
+                                            <div class="like-comment py-3">
+                                                <ul class="list-unstyled d-flex justify-content-between px-3 mb-0">
+                                                    <li><a href="#"><i class="far fa-thumbs-up"></i>225&nbsp; Likes</a></li>
+                                                    <li><a href="#"><i class="far fa-comments"></i>30 &nbsp; comments</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="blog-item-text p-3">
+                                            <h5><a href="blog-details.html" class="text-dark">Different types of stroke</a></h5>
+                                            <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa tempore ea amet a at ipsa qui illo in facilis facere nihil veniam maiores quas corporis!</p>
+                                            <ul class="list-unstyled d-flex justify-content-end mb-0">
+                                                <li><a href="#"><img src="img/team-1.jpg" alt="" class="rounded-circle mr-2" height="25px" width="25px">Jhone</a></li>
+                                                <li><span>Nov 13, 2020</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---Blog-comment--->
+                        <div class="blog-comment-area pt-5">
+                            <h3 class="mb-5">Comments<span class="badge badge-primary">3</span></h3>
+                            <ul class="list-unstyled comment-list">
+                                <li class="mt-4">
+                                    <div class="media">
+                                        <a href="#" class="author border rounded-circle"><img class="rounded-circle" src="img/team-1.jpg" alt="Generic placeholder image" width="50px;" height="50px"></a>
+                                        <div class="media-body border">
+                                            <span ><strong>John Doe</strong><a href="#" class="float-right"><i class="fas fa-reply mr-2"></i>Reply</a></span>
+                                            <p class="py-3">psum dolor sit amet, consectetur adipisicing elit. Numquam iusto, quas tempore aliquid officiis quos reiciendis saepe deleniti animi. Doloribus ipsum, rerum iure in nesciunt repellendus, delectus consequatur sequi. Cupiditate.</p>
+                                            <span class="text-secondary date float-right">January 12, 2020 at 1:38 pm</span>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled comment-list child ml-3">
+                                        <li class="mt-4">
+                                            <div class="media">
+                                                <a href="#" class="author border rounded-circle"><img class="rounded-circle" src="img/team-1.jpg" alt="Generic placeholder image" width="40px;" height="40px"></a>
+                                                <div class="media-body border">
+                                                    <span><strong>John Doe</strong><a href="#" class="float-right"><i class="fas fa-reply mr-2"></i>Reply</a></span>
+                                                    <p class="py-3">psum dolor sit amet, consectetur adipisicing elit. Numquam iusto, quas tempore aliquid </p>
+                                                    <span class="text-secondary date float-right">January 12, 2020 at 1:38 pm</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mt-4">
+                                            <div class="media">
+                                                <a href="#" class="author border rounded-circle"><img class="rounded-circle" src="img/team-1.jpg" alt="Generic placeholder image" width="40px;" height="40px"></a>
+                                                <div class="media-body border">
+                                                    <span><strong>John Doe</strong><a href="#" class="float-right"><i class="fas fa-reply mr-2"></i>Reply</a></span>
+                                                    <p class="py-3">psum dolor sit amet, consectetur adipisicing elit. Numquam iusto, quas tempore aliquid officiis quos reiciendis saepe deleniti animi.</p>
+                                                    <span class="text-secondary date float-right">January 12, 2020 at 1:38 pm</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mt-4">
+                                    <div class="media">
+                                        <a href="#" class="author border rounded-circle"><img class="rounded-circle" src="img/team-1.jpg" alt="Generic placeholder image" width="50px;" height="50px"></a>
+                                        <div class="media-body border">
+                                            <span><strong>John Doe</strong><a href="#" class="float-right"><i class="fas fa-reply mr-2"></i>Reply</a></span>
+                                            <p class="py-3">psum dolor sit amet, consectetur adipisicing elit. Numquam iusto, quas tempore aliquid officiis quos reiciendis saepe deleniti animi. Doloribus ipsum, rerum iure in nesciunt repellendus, delectus consequatur sequi. Cupiditate.</p>
+                                            <span class="text-secondary date float-right">January 12, 2020 at 1:38 pm</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!---Blog-comment-box--->
+                        <div class="blog-comment-box pt-5">
+                            <h3 class="mb-5">Leave a comment</h3>
+                            <form action="#">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Full Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Comment"></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12 text-right">
+                                        <button type="button" class="btn btn-primary p-3 text-uppercase mt-4 ">Submit Comment</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="right-sidebar">
+                       <!----latest-news--->
+                        <div class="widget latest-news pt-5">
+                            <h3 class="text-uppercase mb-3">Latest news</h3>
+                            <div class="latest-news">
+                                <article class="media-post d-flex align-items-center mt-3">
+                                    <a href="#" class="mr-2"><img class="img-fluid" src="img/75x75.png" alt="Generic placeholder image" width="110px;"></a>
+                                    <div class="media-right">
+                                        <a href="#">Sustainable Construction</a>
+                                        <p class="m-0">Lorem ipsum dolor sit amet adipisicing elit...</p>
+                                    </div>
+                                </article>
+                                <article class="media-post d-flex align-items-center mt-3">
+                                    <a href="#" class="mr-2"><img class="img-fluid" src="img/75x75.png" alt="Generic placeholder image" width="110px;"></a>
+                                    <div class="media-right">
+                                        <a href="#">Sustainable Construction</a>
+                                        <p class="m-0">Lorem ipsum dolor sit amet adipisicing elit...</p>
+                                    </div>
+                                </article>
+                                <article class="media-post d-flex align-items-center mt-3">
+                                    <a href="#" class="mr-2"><img class="img-fluid" src="img/75x75.png" alt="Generic placeholder image" width="110px;"></a>
+                                    <div class="media-right">
+                                        <a href="#">Sustainable Construction</a>
+                                        <p class="m-0">Lorem ipsum dolor sit amet adipisicing elit...</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!----categories--->
+                        <div class="widget categories pt-5">
+                            <h3 class="text-uppercase mb-3">categories</h3>
+                            <ul class="list-unstyled">
+                                <li class="py-2"><a href="#">Creative <span>(19)</span></a></li>
+                                <li class="py-2"><a href="#">Portfolio<span>(22)</span></a></li>
+                                <li class="py-2"><a href="#">Fitness <span>(15)</span></a></li>
+                                <li class="py-2"><a href="#">Gym<span>(11)</span></a></li>
+                                <li class="py-2"><a href="#">personal <span>(19)</span></a></li>
+                            </ul>
+                        </div>
+                        <!----Tag--->
+                        <div class="widget tag pt-5">
+                            <h3 class="text-uppercase mb-3">tag cloud</h3>
+                            <div class="tag-cloud">
+                                <a href="#">general</a>
+                                <a href="#">vedios</a>
+                                <a href="#">music</a>
+                                <a href="#">ecommerce</a>
+                                <a href="#">music</a>
+                                <a href="#">photography</a>
+                                <a href="#">music</a>
+                                <a href="#">modern</a>
+                                <a href="#">ecommerce</a>
+                                <a href="#">photography</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!================BLOG-DETAILS-END=======================>
+
+    
+    <!==============FOOTER-START=================>
+    <footer class="footer-section text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 py-4">
+                    <img src="img/bridge-logo.png" alt="" class="mb-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidida ut lab vicinus terarii.</p>
+                    <ul class="social-link d-flex p-0">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 py-4">
+                    <h4>Useful links</h4>
+                    <ul class="p-0">
+                        <li><a href="#">facebook.com</a></li>
+                        <li><a href="#">youtube.com</a></li>
+                        <li><a href="#">linkdin.com</a></li>
+                        <li><a href="#">pinterest.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 py-4">
+                    <h4>Instagram</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laboriosam reprehenderit est,</p>
+                </div>
+                <div class="col-md-3 py-4">
+                    <h4>Twitter Feed</h4>
+                    <p>It seams that you haven't connected with your Twitter account</p>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right text-center py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                    <p>Copyrights © 2020 All Rights Reserved by Techmix.</p>
+                    <div class="copy-right-link">
+                        <a href="#" class="text-light">Terms of Use</a> / <a href="#" class="text-light">Privacy Policy</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!==============FOOTER-END=================>
+    
+
+    <!------------ALL-JS---------->
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

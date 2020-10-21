@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medical clinic</title>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!================NAVBAR-START==================>
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+       <div class="container">
+              
+            <!---hambergur-menu--->
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>  
+              
+          
+          <!-------logo------->
+           <a class="navbar-brand py-0" href="index.html">
+               <img src="img/logo.jpg" alt="" height="70" width="130" class="img-fluid">
+           </a>
+
+
+
+           <!-- Search-trigger-modal-for-mobile-view -->
+           <div class="search d-block d-lg-none">
+               <i class="flaticon-search-interface-symbol" onclick="openSearch()"></i>
+           </div>
+           
+
+           <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                   <li class="nav-item">
+                       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="treatment.html">Treatments</a>
+                   </li>
+                   <li class="nav-item active">
+                       <a class="nav-link" href="about.html">about us</a>
+                   </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="blog.html">Blog</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="contact.html">contact</a>
+                   </li>
+               </ul>
+
+               <div class="phone d-none d-lg-block">
+                   <i class="flaticon-phone-call mr-1"></i>
+                   <span>Call us <a href="#"> 000 888 777</a></span>
+               </div>
+
+
+               <!-- Search trigger modal -->
+               <div class="search d-none d-lg-block">
+                   <i class="flaticon-search-interface-symbol" onclick="openSearch()"></i>
+               </div>
+           </div>
+       </div>
+
+   </nav>
+       <!----search-box---->
+        <div id="myOverlay" class="overlay-search">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+          <div class="overlay-content">
+            <form >
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+    <!==================NAVBAR-END===================>
+    
+    <!==================PAGE-TITLE-START==================>
+    <section class="page-title">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h1 class="display-3 text-capitalize">About Us</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tempore consequuntur accusantium quaerat id nulla sapiente ullam quod commodi ex ut,</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!====================PAGE-TITLE-END====================>
+    
+    <!====================PAGE-BREADCRUMB-START====================>
+    <section class="page-breadcrumb">
+        <!--breadcrumb--->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About</li>
+            </ol>
+        </nav>
+    </section>
+    <!====================PAGE-BREADCRUMB-END====================>
+    
+    <!==============ABOUT-START=================>
+    <section class="about py-5">
+        <div class="container">
+            <h2 class="display-5 pb-4 mb-4 border-bottom"><small>WELCOME TO OUR</small>
+                <span>Medical</span>
+            </h2>
+            <div class="row">
+            <div class="col-md-6 order-md-last">
+                <img src="img/doctor2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-md-first">
+                <p>Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                <p>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sedgnciunt. Sed ut perspiciatis unde omnis accusantium doloremque laudantium ab illo inventore.</p>
+                <a href="#" class="btn btn-outline-primary">Read more</a>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!==============ABOUT-END=================>
+    
+    <!==============FEATURE-START=================>
+    <section class="our-feature py-5">
+        <div class="container">
+           <h2 class="display-5 mb-4">Our core values</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 pt-4">
+                    <div class="feature-item d-flex">
+                        <i class="flaticon-doctor"></i>
+                        <div>
+                            <span class="headline">DOCTOR YOU CHOOSE</span>
+                            <p>Donec hendrerit rutrum nibh, id egestas magna sodales a. Fusce feugiat velit eu ante blandit facilisis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-4">
+                    <div class="feature-item d-flex">
+                        <i class="flaticon-nurse"></i>
+                        <div>
+                            <span class="headline">NURSING STAFF</span>
+                            <p>Mauris commodo lacinia nisi a fermentum. Donec risus magna, fringilla laoreet ullamcorper in,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-4">
+                    <div class="feature-item d-flex">
+                        <i class="flaticon-healthcare"></i>
+                        <div>
+                            <span class="headline">YOUR HEALTHCARE</span>
+                            <p>Donec hendrerit rutrum nibh, id egestas magna sodales a. Fusce feugiat velit eu ante blandit facilisis</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pt-4">
+                    <div class="feature-item d-flex">
+                        <i class="flaticon-emergency-kit"></i>
+                        <div>
+                            <span class="headline">ALWAYS THERE FOR YOU</span>
+                            <p>Mauris commodo lacinia nisi a fermentum. Donec risus magna, fringilla laoreet ullamcorper in,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-4">
+                    <div class="feature-item d-flex">
+                        <i class="flaticon-emergency-sign"></i>
+                        <div>
+                            <span class="headline">EMERGENCY SERVICES</span>
+                            <p>Donec hendrerit rutrum nibh, id egestas magna sodales a. Fusce feugiat velit eu ante blandit facilisis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-4">
+                    <div class="feature-item d-flex">
+                        <i class="flaticon-hospital"></i>
+                        <div>
+                            <span class="headline">PREMIUM FACILITIES</span>
+                            <p>Vestibulum imperdiet vestibulum laoreet. Integer elementum euismod ante sit amet elementum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!==============FEATURE-END=================>
+
+     
+    <!==============OUR-TEAM-START=================>
+    <section class="our-team text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h2 class="display-5">Our Management Team</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+                        pulvinar dapibus leode savii muscule de sanctis.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="tem-member pb-4">
+                        <div class="tem-member-img">
+                            <img src="img/team-1.jpg" alt="name" class="img-fluid">
+                            <div class="overlay">
+                                <ul class="d-flex justify-content-center p-0">
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h5 class="mt-3">Dr Lawrence Soto</h5>
+                        <span>GYNECOLOGIST</span>
+                        <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime totam quos quidem deleniti provident. Sint voluptas, at distinctio quia ratione modi veritatis ad exercitationem. Autem praesentium id dolor, quo blanditiis?</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tem-member pb-4">
+                        <div class="tem-member-img">
+                            <img src="img/team-2.jpg" alt="name" class="img-fluid">
+                            <div class="overlay">
+                                <ul class="d-flex justify-content-center p-0">
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h5 class="mt-3">Dr Lawrence Soto</h5>
+                        <span>GYNECOLOGIST</span>
+                         <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime totam quos quidem deleniti provident. Sint voluptas, at distinctio quia ratione modi veritatis ad exercitationem. Autem praesentium id dolor, quo blanditiis?</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tem-member pb-4">
+                        <div class="tem-member-img">
+                            <img src="img/team-1.jpg" alt="name" class="img-fluid">
+                            <div class="overlay">
+                                <ul class="d-flex justify-content-center p-0">
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h5 class="mt-3">Dr Lawrence Soto</h5>
+                        <span>GYNECOLOGIST</span>
+                         <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime totam quos quidem deleniti provident. Sint voluptas, at distinctio quia ratione modi veritatis ad exercitationem. Autem praesentium id dolor, quo blanditiis?</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!==============OUR-TEAM-END=================>
+    
+    
+    <!==============REVIEWS-START=================>
+    <section class="reviews-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="display-5 text-center">Customer Reviews</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 pt-5">
+                                    <div class="d-flex single-review align-items-center flex-column flex-md-row text-center">
+                                        <div class="customer-overview mr-2 text-center mb-5 mb-md-0">
+                                            <img src="img/team-1.jpg" alt="" class="mx-4 mb-3 rounded-circle border border-primary">
+                                            <h5 class=" display-5">Michael Rolling</h5>
+                                            <span class="d-block text-primary mb-2">PEDIATRIC CENTER</span>
+
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div class="customer-review ml-4">
+                                            <h4 class="display-5 mb-3">The Suport is wonderful as well.</h4>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 pt-5">
+                                    <div class="d-flex single-review align-items-center flex-column flex-md-row text-center">
+                                        <div class="customer-overview mr-2 text-center mb-5 mb-md-0">
+                                            <img src="img/team-2.jpg" alt="" class="mx-4 mb-3 rounded-circle border border-primary">
+                                            <h5 class=" display-5">Michael Rolling</h5>
+                                            <span class="d-block text-primary mb-2">PEDIATRIC CENTER</span>
+
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div class="customer-review ml-4">
+                                            <h4 class="display-5 mb-3">The Suport is wonderful as well.</h4>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!==============REVIEWS-END=================>
+    
+    <!==============FOOTER-START=================>
+    <footer class="footer-section text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 py-4">
+                    <img src="img/bridge-logo.png" alt="" class="mb-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidida ut lab vicinus terarii.</p>
+                    <ul class="social-link d-flex p-0">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 py-4">
+                    <h4>Useful links</h4>
+                    <ul class="p-0">
+                        <li><a href="#">facebook.com</a></li>
+                        <li><a href="#">youtube.com</a></li>
+                        <li><a href="#">linkdin.com</a></li>
+                        <li><a href="#">pinterest.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 py-4">
+                    <h4>Instagram</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laboriosam reprehenderit est,</p>
+                </div>
+                <div class="col-md-3 py-4">
+                    <h4>Twitter Feed</h4>
+                    <p>It seams that you haven't connected with your Twitter account</p>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right text-center py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                    <p>Copyrights © 2020 All Rights Reserved by Techmix.</p>
+                    <div class="copy-right-link">
+                        <a href="#" class="text-light">Terms of Use</a> / <a href="#" class="text-light">Privacy Policy</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!==============FOOTER-END=================>
+    
+
+    <!------------ALL-JS---------->
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

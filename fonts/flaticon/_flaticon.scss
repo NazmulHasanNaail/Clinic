@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 23/09/2020 10:28
+    Creation date: 19/10/2020 06:28
     */
 
     @font-face {
@@ -37,8 +37,20 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-search:before { content: "\f100"; }
-.flaticon-call:before { content: "\f101"; }
+    .flaticon-doctor:before { content: "\f100"; }
+.flaticon-nurse:before { content: "\f101"; }
+.flaticon-emergency-sign:before { content: "\f102"; }
+.flaticon-emergency-kit:before { content: "\f103"; }
+.flaticon-hospital:before { content: "\f104"; }
+.flaticon-healthcare:before { content: "\f105"; }
+.flaticon-search-interface-symbol:before { content: "\f106"; }
+.flaticon-phone-call:before { content: "\f107"; }
     
-    $font-Flaticon-search: "\f100";
-    $font-Flaticon-call: "\f101";
+    $font-Flaticon-doctor: "\f100";
+    $font-Flaticon-nurse: "\f101";
+    $font-Flaticon-emergency-sign: "\f102";
+    $font-Flaticon-emergency-kit: "\f103";
+    $font-Flaticon-hospital: "\f104";
+    $font-Flaticon-healthcare: "\f105";
+    $font-Flaticon-search-interface-symbol: "\f106";
+    $font-Flaticon-phone-call: "\f107";
