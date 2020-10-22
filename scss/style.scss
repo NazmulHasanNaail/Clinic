@@ -82,21 +82,27 @@ nav {
         }
     }
     
-    .search{
-        border-left: 1px dotted #212529;
-         i{
-        cursor: pointer;
-             margin-left: 20px;
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-             color: #000;
-             @media(min-width:992px){
-                 color: #fff;
-             }
-    }
-    i:hover{
-        color: $primary-color;
-    }
+    .search {
+        border-left: 1px dashed #000;
+
+        i {
+            cursor: pointer;
+            margin-left: 20px;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            color: #000;
+            &:hover {
+            color: $primary-color;
+        }
+        }
+
+        @media(min-width:992px) {
+            border-left: 1px dashed #fff;
+
+            i {
+                color: #fff;
+            }
+        }
     }
    
     [class^="flaticon-"]:before, [class*="flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
@@ -212,9 +218,15 @@ nav {
               }
           
       }
-      i{
-          color: #000; 
-      }
+    .search{
+        border-left: 1px dashed #212529;
+                i{
+                  color: #000;
+                       &:hover {
+            color: $primary-color;
+        }
+              }
+          }
       .phone{
           span{
             color: #000;
@@ -390,9 +402,9 @@ nav {
 /*======SINGLE-SERVICES=========*/
 .single-services-section{
     padding: 5rem 0;
-    background: url(../img/single-services-bg.jpg);
+    background: url(../img/single-services-bg.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
 }
 
@@ -538,6 +550,8 @@ nav {
             img {
                 height: 100px;
                 width: 100px;
+                object-fit: cover;
+                padding: 3px;
             }
         }
 
@@ -643,7 +657,7 @@ nav {
 .page-title{
     padding-top: 10rem;
     padding-bottom: 5rem;
-    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/doctor1.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero-slider-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;

@@ -48,18 +48,20 @@ nav {
       nav .phone span a {
         color: #fff; }
   nav .search {
-    border-left: 1px dotted #212529; }
+    border-left: 1px dashed #000; }
     nav .search i {
       cursor: pointer;
       margin-left: 20px;
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
       color: #000; }
-      @media (min-width: 992px) {
+      nav .search i:hover {
+        color: #007bff; }
+    @media (min-width: 992px) {
+      nav .search {
+        border-left: 1px dashed #fff; }
         nav .search i {
           color: #fff; } }
-    nav .search i:hover {
-      color: #007bff; }
   nav [class^="flaticon-"]:before, nav [class*="flaticon-"]:before, nav [class^="flaticon-"]:after, nav [class*=" flaticon-"]:after {
     font-size: 1.6rem; }
   nav .show .navbar-nav {
@@ -142,8 +144,12 @@ nav.sticky {
   padding-bottom: 0; }
   nav.sticky .navbar-nav .nav-link {
     color: #000; }
-  nav.sticky i {
-    color: #000; }
+  nav.sticky .search {
+    border-left: 1px dashed #212529; }
+    nav.sticky .search i {
+      color: #000; }
+      nav.sticky .search i:hover {
+        color: #007bff; }
   nav.sticky .phone span {
     color: #000; }
     nav.sticky .phone span a {
@@ -267,9 +273,9 @@ nav.sticky {
 /*======SINGLE-SERVICES=========*/
 .single-services-section {
   padding: 5rem 0;
-  background: url(../img/single-services-bg.jpg);
+  background: url(../img/single-services-bg.png);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
   background-size: cover; }
 
 /*======COUNTER=========*/
@@ -370,7 +376,9 @@ nav.sticky {
   padding: 5rem 0; }
   .reviews-section .single-review .customer-overview img {
     height: 100px;
-    width: 100px; }
+    width: 100px;
+    object-fit: cover;
+    padding: 3px; }
   .reviews-section .single-review .checked {
     color: orange; }
   .reviews-section .single-review .customer-review h4 {
@@ -432,7 +440,7 @@ nav.sticky {
 .page-title {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/doctor1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero-slider-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
